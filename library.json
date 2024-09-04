@@ -1,0 +1,12 @@
+{
+    "name": "Virtual Joystick for LVGL",
+    "version": "1.0.0",
+    "description": "A joystick library supporting ESP-IDF and Arduino.",
+    "authors": {
+      "name": "Eric Nam",
+      "email": "thatprojectstudio@gmail.com"
+    },
+    "frameworks": ["arduino", "espidf"],
+    "platforms": ["*"]
+  }
+  
