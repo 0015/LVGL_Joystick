@@ -1,5 +1,5 @@
 #include "lvgl_joystick.h"
-#include <stdlib.h>
+#include <math.h>
 
 // Event handler for the joystick
 static void joystic_event_handler(lv_event_t *e) {
@@ -34,13 +34,10 @@ static void joystic_event_handler(lv_event_t *e) {
     float distance_from_center = sqrt(x * x + y * y);
     if (distance_from_center < base_radius - (stick_radius * 1.2)) {
       lv_obj_set_pos(obj, x, y);
-
       if (joystick_data->position_callback) {
-        joystick_data->position_callback(joystick_data->joystick_id, vect.x, vect.y);
-        }
+        joystick_data->position_callback(joystick_id, vect.x, vect.y);
+      }
     }
-
-
   }
 }
 

@@ -1,6 +1,11 @@
 #ifndef LVGL_JOYSTICK_H
 #define LVGL_JOYSTICK_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#pragma once
 #include <lvgl.h>
 
 // Callback function type
@@ -16,5 +21,9 @@ typedef struct {
 
 // Function prototypes
 void create_joystick(lv_obj_t *parent, uint8_t joystick_id, lv_align_t base_align, int base_x, int base_y, int base_radius, int stick_radius, lv_style_t *base_style, lv_style_t *stick_style, joystick_position_cb_t position_callback);
+
+#ifdef __cplusplus
+} /*extern "C"*/
+#endif
 
 #endif // LVGL_JOYSTICK_H
