@@ -2,7 +2,7 @@
 
 This library provides an easy way to create virtual joysticks for use in an LVGL environment. It supports both ESP-IDF and Arduino platforms and allows you to handle joystick input with customizable styles and callbacks.
 
-[![Virtual Joystic for LVGL](./misc/demo_1.gif)](https://youtu.be/QYOfr-VTves)
+[![Virtual Joystic for LVGL](./misc/demo_1.gif)](https://youtu.be/ZhhSd6LA1jA)
 
 ## Features
 
